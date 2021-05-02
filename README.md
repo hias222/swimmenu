@@ -19,6 +19,8 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ```shell
 find node_modules -name graphql
+npm list | grep graphql -A2 -B2
+## peer dep missing
 ```
 
 ```shell
