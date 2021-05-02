@@ -15,6 +15,12 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## Build
 
+### some fixes
+
+```shell
+find node_modules -name graphql
+```
+
 ```shell
 gatsby build --prefix-paths
 ```
