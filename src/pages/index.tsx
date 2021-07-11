@@ -95,7 +95,7 @@ const defaultIndex: React.FC<PageProps<DataProps>> = ({ data, path }) => (
         </Grid>
 
         <Grid item xs={6} md={3}>
-          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/sounf"}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/sound"}>
             sound
           </Button>
         </Grid>
