@@ -4,6 +4,7 @@ module.exports = {
     description: `Menu Pager `,
     author: `@hias222`,
     siteURL: 'https://ubuntu.fritz.box',
+    siteUnsecureURL: 'http://ubuntu.fritz.box',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

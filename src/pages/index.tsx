@@ -34,18 +34,13 @@ const defaultIndex: React.FC<PageProps<DataProps>> = ({ data, path }) => (
           </Button>
         </Grid>
         <Grid item xs={6} md={3}>
-          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/live"}>
-            Live
-          </Button>
-        </Grid>
-        <Grid item xs={6} md={3}>
-          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/overlay"}>
-            Overlay
-          </Button>
-        </Grid>
-        <Grid item xs={6} md={3}>
           <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/admin"}>
             Admin
+          </Button>
+        </Grid>
+        <Grid item xs={6} md={3}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/frontend"}>
+            Frontend
           </Button>
         </Grid>
       </Grid>
@@ -56,8 +51,52 @@ const defaultIndex: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     <Paper>
       <Grid container spacing={5}>
         <Grid item xs={6} md={3}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/peer"}>
+            Peer Camera Remote
+          </Button>
+        </Grid>
+        <Grid item xs={6} md={3}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/live"}>
+            Live
+          </Button>
+        </Grid>
+        <Grid item xs={6} md={3}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/overlay"}>
+            Overlay
+          </Button>
+        </Grid>
+        <Grid item xs={6} md={3}>
           <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/camera"}>
-            Camera
+            Camera Test
+          </Button>
+        </Grid>
+
+      </Grid>
+    </Paper>
+
+
+    <Paper>
+      <Grid container spacing={5}>
+        <Grid item xs={6} md={3}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteUnsecureURL + "/obstablet"}>
+            OBS Tablet
+          </Button>
+        </Grid>
+        <Grid item xs={6} md={3}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/obscontrol/api-docs"}>
+            OBS Control
+          </Button>
+        </Grid>
+
+        <Grid item xs={6} md={3}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteUnsecureURL + "/myCA.pem"}>
+            myCA.pem
+          </Button>
+        </Grid>
+
+        <Grid item xs={6} md={3}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/sounf"}>
+            sound
           </Button>
         </Grid>
 
@@ -65,7 +104,7 @@ const defaultIndex: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     </Paper>
 
     <Box height={50} />
-   
+
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
