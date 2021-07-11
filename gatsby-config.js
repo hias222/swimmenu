@@ -3,6 +3,7 @@ module.exports = {
     title: `Swim Menu`,
     description: `Menu Pager `,
     author: `@hias222`,
+    siteURL: 'https://ubuntu.fritz.box',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

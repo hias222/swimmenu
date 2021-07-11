@@ -9,17 +9,16 @@ import { Grid } from "@material-ui/core"
 import { Button } from "@material-ui/core"
 import { Paper } from "@material-ui/core"
 
+import useSiteMetadata from '../hooks/use-site-metadata';
+
 type DataProps = {
   site: {
     buildTime: string
   }
 }
 
-const url = window.location.hostname;
-const port = window.location.port;
-
-
 const defaultIndex: React.FC<PageProps<DataProps>> = ({ data, path }) => (
+
   <Layout>
     <p>
       You're currently on the page "{path}" which was built on{" "}
@@ -30,22 +29,22 @@ const defaultIndex: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     <Paper>
       <Grid container spacing={5}>
         <Grid item xs={6} md={3}>
-          <Button variant="contained" color="primary" href={"https://" + url + ":" + port + "/display"}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/display"}>
             Display
           </Button>
         </Grid>
         <Grid item xs={6} md={3}>
-          <Button variant="contained" color="primary" href={"https://" + url + ":" + port + "/live"}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/live"}>
             Live
           </Button>
         </Grid>
         <Grid item xs={6} md={3}>
-          <Button variant="contained" color="primary" href={"https://" + url + ":" + port + "/overlay"}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/overlay"}>
             Overlay
           </Button>
         </Grid>
         <Grid item xs={6} md={3}>
-          <Button variant="contained" color="primary" href={"https://" + url + ":" + port + "/admin"}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/admin"}>
             Admin
           </Button>
         </Grid>
@@ -57,7 +56,7 @@ const defaultIndex: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     <Paper>
       <Grid container spacing={5}>
         <Grid item xs={6} md={3}>
-          <Button variant="contained" color="primary" href={"https://" + url + ":" + port + "/camera"}>
+          <Button variant="contained" color="primary" href={useSiteMetadata().siteURL + "/camera"}>
             Camera
           </Button>
         </Grid>
@@ -70,7 +69,6 @@ const defaultIndex: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
-
 
 export default defaultIndex
 
