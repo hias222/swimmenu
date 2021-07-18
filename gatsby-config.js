@@ -13,10 +13,15 @@ module.exports = {
             {
                name:'control',
                link:'/control'
-            }
+            },
+            {
+              name:'overlay',
+              link:'/overlay'
+           }
           ]
   },
   plugins: [
+    `transform-class-properties`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

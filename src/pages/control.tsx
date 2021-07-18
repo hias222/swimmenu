@@ -28,7 +28,9 @@ const control: React.FC<PageProps<DataProps>> = ({ data, path }) => (
         </Box>
       </Grid>
       <Grid item xs={12} md={5}>
-        <iframe width={'100%'} height={'100%'} src={useSiteMetadata().siteURL + "/display"}></iframe>
+        <Box height={'90vH'}>
+          <iframe width={'100%'} height={'100%'} src={useSiteMetadata().siteURL + "/display"}></iframe>
+        </Box>
       </Grid>
     </Grid>
 
