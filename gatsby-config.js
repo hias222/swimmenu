@@ -3,8 +3,18 @@ module.exports = {
     title: `Swim Menu`,
     description: `Menu Pager `,
     author: `@hias222`,
-    siteURL: 'http://localhost:8000',
+    siteURL: 'https://ubuntu.fritz.box',
     siteUnsecureURL: 'http://localhost:8000',
+    menuLinks:[
+            {
+               name:'index',
+               link:'/'
+            },
+            {
+               name:'control',
+               link:'/control'
+            }
+          ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

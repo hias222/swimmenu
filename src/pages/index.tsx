@@ -20,7 +20,7 @@ type DataProps = {
 const defaultIndex: React.FC<PageProps<DataProps>> = ({ data, path }) => (
 
   <Layout>
-    <p>
+     <p>
       You're currently on the page "{path}" which was built on{" "}
       {data.site.buildTime}.
     </p>
